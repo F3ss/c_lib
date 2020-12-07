@@ -33,6 +33,8 @@ int main(){
     printf("1 %d\n", ft_isalnum('h'));
     printf("1 %d\n", ft_isascii('~'));
     printf("1 %d\n", ft_isprint('\t'));
-    
+    printf("1 %c\n", ft_toupper('a'));
+    printf("1 %c\n", ft_tolower('Z'));
+
     return (0);
 }
