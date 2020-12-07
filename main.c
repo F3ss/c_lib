@@ -31,5 +31,8 @@ int main(){
     printf("1 %d\n", ft_isalpha('G'));
     printf("1 %d\n", ft_isdigit('0'));
     printf("1 %d\n", ft_isalnum('h'));
+    printf("1 %d\n", ft_isascii('~'));
+    printf("1 %d\n", ft_isprint('\t'));
+    
     return (0);
 }
