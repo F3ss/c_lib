@@ -28,5 +28,8 @@ int main(){
     printf("123456789 - %d\n", ft_atoi("1234567890"));
     printf("atoi %d\n", atoi("-214748364922123"));
     printf("ft_atoi %d\n", ft_atoi("-214748364922123"));
+    printf("1 %d\n", ft_isalpha('G'));
+    printf("1 %d\n", ft_isdigit('0'));
+    printf("1 %d\n", ft_isalnum('h'));
     return (0);
 }

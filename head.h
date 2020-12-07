@@ -17,3 +17,6 @@ char *ft_strrchr(const char *str, int c);
 char *ft_strnstr(const char *strB, const char *strA, size_t len);
 int ft_strncmp(const char *str1, const char *str2, size_t n);
 int ft_atoi (const char *str);
+int ft_isalpha(int c);
+int ft_isdigit(int c);
+int ft_isalnum(int c);
