@@ -3,7 +3,9 @@
 
 int main(){
     char str[5] = "Hello";
+    char *c = "check";
     char *s;
+    char *p;
 
     printf("Hello - %s\n",str);
     ft_bzero(str, 3);
@@ -23,7 +25,7 @@ int main(){
     printf("2 %d\n", (int)ft_strlcpy(str, "qw", 1));
     printf("owin - %s\n", ft_strchr("Hellowin", 'o'));
     printf("lowine - %s\n", ft_strrchr("Hellowine", 'l'));
-    printf("Hellw & win - %s\n", ft_strnstr("Hellw & win", "wi", 20));
+    printf("Hellw & win - %s\n", ft_strnstr("Hellw & win", "wi", 20)); 
     printf("1 - %d\n", ft_strncmp("ellw & win", "Hellw & win", 2));
     printf("123456789 - %d\n", ft_atoi("1234567890"));
     printf("atoi %d\n", atoi("-214748364922123"));
@@ -35,6 +37,18 @@ int main(){
     printf("1 %d\n", ft_isprint('\t'));
     printf("1 %c\n", ft_toupper('a'));
     printf("1 %c\n", ft_tolower('Z'));
+    
+    s = ft_calloc(6, sizeof(char));
+    p = s;
+    while (*c != 0)
+    {
+        *s = *c;
+        s++;
+        c++;
+    }
+    s = p;
+    printf("check %s\n", ft_strdup(s));
+    printf("eck %s\n", ft_substr(s, 2, 3));
 
     return (0);
 }
