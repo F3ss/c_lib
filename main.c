@@ -50,6 +50,7 @@ int main(){
     printf("check %s\n", ft_strdup(s));
     printf("eck %s\n", ft_substr(s, 2, 3));
     printf("asd 3 %s\n", ft_strjoin("asd", " 3"));
+    printf("sd %s\n", ft_strtrim("asdQWqweqwe", "sdQz"));
 
     return (0);
 }
