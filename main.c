@@ -51,6 +51,14 @@ int main(){
     printf("eck %s\n", ft_substr(s, 2, 3));
     printf("asd 3 %s\n", ft_strjoin("asd", " 3"));
     printf("sd %s\n", ft_strtrim("asdQWqweqwe", "sdQz"));
+    char **sss = ft_split("qwe,SADASWQzxc,fdsfck", ',');
+    int i = 0;
+    while (i < 3)
+    {
+        printf("%s\n", sss[i]);
+        i++;
+    }
+    printf("1234567890 %s\n", ft_itoa(2147483648));
 
     return (0);
 }
