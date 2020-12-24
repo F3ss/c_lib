@@ -63,6 +63,7 @@ int main(){
     char *path = "/home/f3ss/Documents/example.txt";
     fd = open(path, O_CREAT | O_WRONLY, 0600);
     ft_putchar_fd('c', fd);
+    ft_putstr_fd("I hope its works", fd);
 
     return (0);
 }
