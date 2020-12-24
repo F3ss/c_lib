@@ -64,6 +64,6 @@ int main(){
     fd = open(path, O_CREAT | O_WRONLY, 0600);
     ft_putchar_fd('c', fd);
     ft_putstr_fd("I hope its works", fd);
-
+    ft_putendl_fd("o_O", fd);
     return (0);
 }
