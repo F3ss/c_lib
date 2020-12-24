@@ -11,7 +11,7 @@ FLAGS = -Wall -Werror -Wextra
 NAME = main
 
 clean:
-	rm -rf main.o ft_memset.o ft_bzero.o ft_memcpy.o ft_memccpy.o ft_memmove.o
+	rm -rf *.o
 fclean: clean
 	rm ${NAME}
 re: fclean all
