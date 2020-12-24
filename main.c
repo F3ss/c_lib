@@ -59,6 +59,10 @@ int main(){
         i++;
     }
     printf("1234567890 %s\n", ft_itoa(2147483648));
+    int fd;
+    char *path = "/home/f3ss/Documents/example.txt";
+    fd = open(path, O_CREAT | O_WRONLY, 0600);
+    ft_putchar_fd('c', fd);
 
     return (0);
 }
