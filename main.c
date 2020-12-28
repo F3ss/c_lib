@@ -65,5 +65,6 @@ int main(){
     ft_putchar_fd('c', fd);
     ft_putstr_fd("I hope its works", fd);
     ft_putendl_fd("o_O", fd);
+    ft_putnbr_fd(12389, fd);
     return (0);
 }
