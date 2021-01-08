@@ -21,6 +21,7 @@ int main()
 	}
 	res2 = *arr;
 	printf("%d \n", ft_lstsize(res2));
+	printf("%s \n", (char *)ft_lstlast(res2)->content);
 	printf("AAAAAAAAAAAAA\n");
     return (0);
 }
