@@ -1,11 +1,26 @@
 #include "head.h"
+#include "libfdt.h"
 #include <stdio.h>
 
 int main()
 {
-//    t_list res;
-//    res = ft_lstnew("QWE");
-//    printf("%s wtf\n", res.content);
+    t_list *res;
+    t_list *res1;
+    t_list *res2;
+    t_list **arr;
+    res = ft_lstnew("Rabotaet!xD");
+    res1 = ft_lstnew("I hope this string is first...");
+	arr = &res;
+    printf("%s\n", (char *)res->content);
+	ft_lstadd_front(arr, res1);
+	res2 = *arr; 
+	while (res2 != NULL)
+	{
+		printf("%s\n", (char *)res2->content);
+		res2 = res2->next;
+	}
+	res2 = *arr;
+	printf("%d \n", ft_lstsize(res2));
 	printf("AAAAAAAAAAAAA\n");
     return (0);
 }
