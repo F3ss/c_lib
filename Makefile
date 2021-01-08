@@ -10,7 +10,7 @@ SRC = main.c ft_atoi.c ft_memccpy.c ft_putstr_fd.c ft_strncmp.c ft_bzero.c \
 		ft_putendl_fd.c ft_strlen.c ft_itoa.c ft_putnbr_fd.c \
 		ft_strmapi.c \
 
-SRC_BONUS = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c
+SRC_BONUS = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c
 
 mko:
 	${CC} ${FLAGS} -c ${SRC} ${SRC_BONUS} 
