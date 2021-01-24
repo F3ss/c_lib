@@ -7,8 +7,8 @@ mko:
 lib.a: mko
 	ar rcs libft.a ${SRCO}
 
-SRC = main.c
-SRCO = main.o
+SRC = main.c ft_memset.c
+SRCO = main.o ft_memset.o
 
 CC = gcc
 FLAGS = -Wall -Werror -Wextra
